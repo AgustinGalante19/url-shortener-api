@@ -7,10 +7,11 @@
   "scripts": {
     "dev": "node --watch server.js",
     "build": "pnpm i && npx prisma generate",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
-  "author": "",
+  "author": "Agustin Galante",
   "license": "ISC",
   "dependencies": {
     "@fastify/cors": "8.5.0",
